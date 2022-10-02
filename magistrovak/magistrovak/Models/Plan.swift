@@ -1,6 +1,7 @@
 import Foundation
 
-struct Plan {
+struct Plan: Equatable, Identifiable {
     let id: Int
     let name: String
+    let time: String
 }

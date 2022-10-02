@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0D6DF0F28E5B2DA007404BE /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A0D6DF0E28E5B2DA007404BE /* ComposableArchitecture */; };
+		A0D6DF1128E5D2E3007404BE /* PlanMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6DF1028E5D2E3007404BE /* PlanMock.swift */; };
+		A0D6DF1328E5DBF9007404BE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6DF1228E5DBF9007404BE /* APIError.swift */; };
 		A0FC9EF828C8FA9C007D1BBD /* magistrovakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9EF728C8FA9C007D1BBD /* magistrovakApp.swift */; };
 		A0FC9EFA28C8FA9C007D1BBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9EF928C8FA9C007D1BBD /* ContentView.swift */; };
 		A0FC9EFC28C8FA9D007D1BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0FC9EFB28C8FA9D007D1BBD /* Assets.xcassets */; };
@@ -16,11 +19,10 @@
 		A0FC9F1528C8FA9D007D1BBD /* magistrovakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F1428C8FA9D007D1BBD /* magistrovakUITestsLaunchTests.swift */; };
 		A0FC9F2728C8FC9D007D1BBD /* ProgrammeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F2628C8FC9D007D1BBD /* ProgrammeView.swift */; };
 		A0FC9F2A28C8FE14007D1BBD /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F2928C8FE14007D1BBD /* Plan.swift */; };
-		A0FC9F2E28C8FFBD007D1BBD /* ProgrammeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F2D28C8FFBD007D1BBD /* ProgrammeViewModel.swift */; };
+		A0FC9F2E28C8FFBD007D1BBD /* ProgrammeCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F2D28C8FFBD007D1BBD /* ProgrammeCore.swift */; };
 		A0FC9F3228C900BC007D1BBD /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F3128C900BC007D1BBD /* AsyncView.swift */; };
 		A0FC9F3428C90CDB007D1BBD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F3328C90CDB007D1BBD /* ErrorView.swift */; };
-		A0FC9F3628C9153C007D1BBD /* ObservableObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F3528C9153C007D1BBD /* ObservableObject+.swift */; };
-		A0FC9F3828C9155E007D1BBD /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F3728C9155E007D1BBD /* LoadingState.swift */; };
+		A0FC9F3828C9155E007D1BBD /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F3728C9155E007D1BBD /* Loadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0D6DF1028E5D2E3007404BE /* PlanMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMock.swift; sourceTree = "<group>"; };
+		A0D6DF1228E5DBF9007404BE /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		A0FC9EF428C8FA9C007D1BBD /* magistrovak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magistrovak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FC9EF728C8FA9C007D1BBD /* magistrovakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakApp.swift; sourceTree = "<group>"; };
 		A0FC9EF928C8FA9C007D1BBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,11 +57,10 @@
 		A0FC9F1428C8FA9D007D1BBD /* magistrovakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A0FC9F2628C8FC9D007D1BBD /* ProgrammeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeView.swift; sourceTree = "<group>"; };
 		A0FC9F2928C8FE14007D1BBD /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
-		A0FC9F2D28C8FFBD007D1BBD /* ProgrammeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeViewModel.swift; sourceTree = "<group>"; };
+		A0FC9F2D28C8FFBD007D1BBD /* ProgrammeCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeCore.swift; sourceTree = "<group>"; };
 		A0FC9F3128C900BC007D1BBD /* AsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
 		A0FC9F3328C90CDB007D1BBD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		A0FC9F3528C9153C007D1BBD /* ObservableObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject+.swift"; sourceTree = "<group>"; };
-		A0FC9F3728C9155E007D1BBD /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		A0FC9F3728C9155E007D1BBD /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D6DF0F28E5B2DA007404BE /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +160,7 @@
 			children = (
 				A0FC9EFB28C8FA9D007D1BBD /* Assets.xcassets */,
 				A0FC9EFD28C8FA9D007D1BBD /* Preview Content */,
+				A0D6DF1228E5DBF9007404BE /* APIError.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 		A0FC9F2B28C8FE56007D1BBD /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				A0D6DF1028E5D2E3007404BE /* PlanMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -180,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				A0FC9F2628C8FC9D007D1BBD /* ProgrammeView.swift */,
-				A0FC9F2D28C8FFBD007D1BBD /* ProgrammeViewModel.swift */,
+				A0FC9F2D28C8FFBD007D1BBD /* ProgrammeCore.swift */,
 			);
 			path = Programme;
 			sourceTree = "<group>";
@@ -198,8 +204,7 @@
 			children = (
 				A0FC9F3128C900BC007D1BBD /* AsyncView.swift */,
 				A0FC9F3328C90CDB007D1BBD /* ErrorView.swift */,
-				A0FC9F3728C9155E007D1BBD /* LoadingState.swift */,
-				A0FC9F3528C9153C007D1BBD /* ObservableObject+.swift */,
+				A0FC9F3728C9155E007D1BBD /* Loadable.swift */,
 			);
 			path = AsyncView;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			);
 			name = magistrovak;
 			packageProductDependencies = (
+				A0D6DF0E28E5B2DA007404BE /* ComposableArchitecture */,
 			);
 			productName = magistrovak;
 			productReference = A0FC9EF428C8FA9C007D1BBD /* magistrovak.app */;
@@ -295,6 +301,7 @@
 			);
 			mainGroup = A0FC9EEB28C8FA9C007D1BBD;
 			packageReferences = (
+				A0D6DF0D28E5B2DA007404BE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = A0FC9EF528C8FA9C007D1BBD /* Products */;
 			projectDirPath = "";
@@ -339,14 +346,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0FC9F2A28C8FE14007D1BBD /* Plan.swift in Sources */,
-				A0FC9F3628C9153C007D1BBD /* ObservableObject+.swift in Sources */,
 				A0FC9F3228C900BC007D1BBD /* AsyncView.swift in Sources */,
-				A0FC9F2E28C8FFBD007D1BBD /* ProgrammeViewModel.swift in Sources */,
+				A0FC9F2E28C8FFBD007D1BBD /* ProgrammeCore.swift in Sources */,
 				A0FC9F2728C8FC9D007D1BBD /* ProgrammeView.swift in Sources */,
 				A0FC9F3428C90CDB007D1BBD /* ErrorView.swift in Sources */,
-				A0FC9F3828C9155E007D1BBD /* LoadingState.swift in Sources */,
+				A0D6DF1128E5D2E3007404BE /* PlanMock.swift in Sources */,
+				A0FC9F3828C9155E007D1BBD /* Loadable.swift in Sources */,
 				A0FC9EFA28C8FA9C007D1BBD /* ContentView.swift in Sources */,
 				A0FC9EF828C8FA9C007D1BBD /* magistrovakApp.swift in Sources */,
+				A0D6DF1328E5DBF9007404BE /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +679,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0D6DF0D28E5B2DA007404BE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0D6DF0E28E5B2DA007404BE /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D6DF0D28E5B2DA007404BE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0FC9EEC28C8FA9C007D1BBD /* Project object */;
 }

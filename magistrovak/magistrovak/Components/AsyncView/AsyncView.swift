@@ -1,44 +1,97 @@
+//import SwiftUI
+//import Combine
+//
+//// MARK: - Async View
+//
+//struct AsyncView<Source: Loadable,
+//                 ErrorView: View,
+//                 LoadingView: View,
+//                 Content: View>: View {
+//
+//    @ObservedObject var source: Source
+//    var loadingView: () -> LoadingView
+//    var errorView: (Error) -> ErrorView
+//    var content: (Source.Output) -> Content
+//
+//    var body: some View {
+//        switch source.state {
+//        case .idle, .loading:
+//            loadingView()
+//        case .failed(let error):
+//            errorView(error)
+//        case .loaded(let output):
+//            content(output)
+//        }
+//    }
+//
+//}
+//
+//// MARK: - Async View init
+//
+//typealias DefaultProgressView = ProgressView<EmptyView, EmptyView>
+//typealias DefaultErrorView = CustomErrorView
+//
+//extension AsyncView where LoadingView == DefaultProgressView, ErrorView == DefaultErrorView {
+//
+//    init(
+//        source: Source,
+//        @ViewBuilder content: @escaping (Source.Output) -> Content
+//    ) {
+//        self.init(source: source) {
+//            ProgressView()
+//        } errorView: { error in
+//            CustomErrorView(title: error.localizedDescription)
+//        } content: { output in
+//            content(output)
+//        }
+//    }
+//
+//}
+
+
 import SwiftUI
 import Combine
 
-struct AsyncContentView<
-    Source: LoadableObject,
-                        ErrorView: View,
-                        LoadingView: View,
-                        Content: View>: View {
-    @ObservedObject var source: Source
-    var loadingView: () -> LoadingView
-    var errorView: (Error) -> ErrorView
-    var content: (Source.Output) -> Content
+// MARK: - Async View
+
+struct AsyncView<ErrorView: View,
+                    LoadedView: View,
+                    LoadingView: View,
+                    LoadedValue: Equatable>: View {
+    let loadable: Loadable<LoadedValue, APIError>
+    let loadingView: () -> LoadingView
+    let errorView: (APIError) -> ErrorView
+    var loadedView: (LoadedValue) -> LoadedView
 
     var body: some View {
-        switch source.state {
+        switch loadable {
         case .idle, .loading:
             loadingView()
+
         case .failed(let error):
             errorView(error)
-        case .loaded(let output):
-            content(output)
+
+        case .loaded(let loadedData):
+            loadedView(loadedData)
         }
     }
+
 }
-// MARK: - Async Content View
 
 typealias DefaultProgressView = ProgressView<EmptyView, EmptyView>
 typealias DefaultErrorView = CustomErrorView
 
-extension AsyncContentView where LoadingView == DefaultProgressView, ErrorView == DefaultErrorView {
+extension AsyncView where LoadingView == DefaultProgressView, ErrorView == DefaultErrorView {
     init(
-        source: Source,
-        @ViewBuilder content: @escaping (Source.Output) -> Content
+        for loadable: Loadable<LoadedValue, APIError>,
+        @ViewBuilder loadedView: @escaping (LoadedValue) -> LoadedView
     ) {
-        self.init(source: source) {
+        self.init(loadable: loadable) {
             ProgressView()
         } errorView: { error in
             CustomErrorView(title: error.localizedDescription)
-        } content: { output in
-            content(output)
+        } loadedView: { loadedData in
+            loadedView(loadedData)
         }
-
     }
 }
