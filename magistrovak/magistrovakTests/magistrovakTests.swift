@@ -2,13 +2,13 @@
 //  magistrovakTests.swift
 //  magistrovakTests
 //
-//  Created by Lucie Havrdová on 07.09.2022.
+//  Created by Lucie Havrdová on 23.11.2022.
 //
 
 import XCTest
 @testable import magistrovak
 
-class magistrovakTests: XCTestCase {
+final class magistrovakTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

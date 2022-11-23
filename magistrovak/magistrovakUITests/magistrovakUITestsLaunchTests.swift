@@ -2,12 +2,12 @@
 //  magistrovakUITestsLaunchTests.swift
 //  magistrovakUITests
 //
-//  Created by Lucie Havrdová on 07.09.2022.
+//  Created by Lucie Havrdová on 23.11.2022.
 //
 
 import XCTest
 
-class magistrovakUITestsLaunchTests: XCTestCase {
+final class magistrovakUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

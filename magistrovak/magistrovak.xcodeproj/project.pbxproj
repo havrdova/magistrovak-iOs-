@@ -3,83 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0D6DF0F28E5B2DA007404BE /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A0D6DF0E28E5B2DA007404BE /* ComposableArchitecture */; };
-		A0D6DF1128E5D2E3007404BE /* PlanMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6DF1028E5D2E3007404BE /* PlanMock.swift */; };
-		A0D6DF1328E5DBF9007404BE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6DF1228E5DBF9007404BE /* APIError.swift */; };
-		A0FC9EF828C8FA9C007D1BBD /* magistrovakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9EF728C8FA9C007D1BBD /* magistrovakApp.swift */; };
-		A0FC9EFA28C8FA9C007D1BBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9EF928C8FA9C007D1BBD /* ContentView.swift */; };
-		A0FC9EFC28C8FA9D007D1BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0FC9EFB28C8FA9D007D1BBD /* Assets.xcassets */; };
-		A0FC9EFF28C8FA9D007D1BBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0FC9EFE28C8FA9D007D1BBD /* Preview Assets.xcassets */; };
-		A0FC9F0928C8FA9D007D1BBD /* magistrovakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F0828C8FA9D007D1BBD /* magistrovakTests.swift */; };
-		A0FC9F1328C8FA9D007D1BBD /* magistrovakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F1228C8FA9D007D1BBD /* magistrovakUITests.swift */; };
-		A0FC9F1528C8FA9D007D1BBD /* magistrovakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F1428C8FA9D007D1BBD /* magistrovakUITestsLaunchTests.swift */; };
-		A0FC9F2728C8FC9D007D1BBD /* ProgrammeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F2628C8FC9D007D1BBD /* ProgrammeView.swift */; };
-		A0FC9F2A28C8FE14007D1BBD /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F2928C8FE14007D1BBD /* Plan.swift */; };
-		A0FC9F2E28C8FFBD007D1BBD /* ProgrammeCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F2D28C8FFBD007D1BBD /* ProgrammeCore.swift */; };
-		A0FC9F3228C900BC007D1BBD /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F3128C900BC007D1BBD /* AsyncView.swift */; };
-		A0FC9F3428C90CDB007D1BBD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F3328C90CDB007D1BBD /* ErrorView.swift */; };
-		A0FC9F3828C9155E007D1BBD /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC9F3728C9155E007D1BBD /* Loadable.swift */; };
+		A0036E2E292E9ECC003C2000 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E2D292E9ECC003C2000 /* App.swift */; };
+		A0036E32292E9ECD003C2000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0036E31292E9ECD003C2000 /* Assets.xcassets */; };
+		A0036E35292E9ECD003C2000 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0036E34292E9ECD003C2000 /* Preview Assets.xcassets */; };
+		A0036E3F292E9ECD003C2000 /* magistrovakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E3E292E9ECD003C2000 /* magistrovakTests.swift */; };
+		A0036E49292E9ECD003C2000 /* magistrovakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E48292E9ECD003C2000 /* magistrovakUITests.swift */; };
+		A0036E4B292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E4A292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift */; };
+		A0036E59292E9FA6003C2000 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A0036E58292E9FA6003C2000 /* ComposableArchitecture */; };
+		A0036E5D292EA0A6003C2000 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E5C292EA0A6003C2000 /* NavigationView.swift */; };
+		A0036E5F292EA0B8003C2000 /* NavigationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E5E292EA0B8003C2000 /* NavigationCore.swift */; };
+		A0036E64292EA119003C2000 /* ProgrammeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E63292EA119003C2000 /* ProgrammeView.swift */; };
+		A0036E66292EA124003C2000 /* ProgrammeCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E65292EA124003C2000 /* ProgrammeCore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A0FC9F0528C8FA9D007D1BBD /* PBXContainerItemProxy */ = {
+		A0036E3B292E9ECD003C2000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A0FC9EEC28C8FA9C007D1BBD /* Project object */;
+			containerPortal = A0036E22292E9ECC003C2000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A0FC9EF328C8FA9C007D1BBD;
+			remoteGlobalIDString = A0036E29292E9ECC003C2000;
 			remoteInfo = magistrovak;
 		};
-		A0FC9F0F28C8FA9D007D1BBD /* PBXContainerItemProxy */ = {
+		A0036E45292E9ECD003C2000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A0FC9EEC28C8FA9C007D1BBD /* Project object */;
+			containerPortal = A0036E22292E9ECC003C2000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A0FC9EF328C8FA9C007D1BBD;
+			remoteGlobalIDString = A0036E29292E9ECC003C2000;
 			remoteInfo = magistrovak;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A0D6DF1028E5D2E3007404BE /* PlanMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMock.swift; sourceTree = "<group>"; };
-		A0D6DF1228E5DBF9007404BE /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		A0FC9EF428C8FA9C007D1BBD /* magistrovak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magistrovak.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0FC9EF728C8FA9C007D1BBD /* magistrovakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakApp.swift; sourceTree = "<group>"; };
-		A0FC9EF928C8FA9C007D1BBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A0FC9EFB28C8FA9D007D1BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0FC9EFE28C8FA9D007D1BBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A0FC9F0428C8FA9D007D1BBD /* magistrovakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magistrovakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0FC9F0828C8FA9D007D1BBD /* magistrovakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakTests.swift; sourceTree = "<group>"; };
-		A0FC9F0E28C8FA9D007D1BBD /* magistrovakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magistrovakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0FC9F1228C8FA9D007D1BBD /* magistrovakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakUITests.swift; sourceTree = "<group>"; };
-		A0FC9F1428C8FA9D007D1BBD /* magistrovakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A0FC9F2628C8FC9D007D1BBD /* ProgrammeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeView.swift; sourceTree = "<group>"; };
-		A0FC9F2928C8FE14007D1BBD /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
-		A0FC9F2D28C8FFBD007D1BBD /* ProgrammeCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeCore.swift; sourceTree = "<group>"; };
-		A0FC9F3128C900BC007D1BBD /* AsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
-		A0FC9F3328C90CDB007D1BBD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		A0FC9F3728C9155E007D1BBD /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		A0036E2A292E9ECC003C2000 /* magistrovak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magistrovak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0036E2D292E9ECC003C2000 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		A0036E31292E9ECD003C2000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0036E34292E9ECD003C2000 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0036E3A292E9ECD003C2000 /* magistrovakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magistrovakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0036E3E292E9ECD003C2000 /* magistrovakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakTests.swift; sourceTree = "<group>"; };
+		A0036E44292E9ECD003C2000 /* magistrovakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magistrovakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0036E48292E9ECD003C2000 /* magistrovakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakUITests.swift; sourceTree = "<group>"; };
+		A0036E4A292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0036E5C292EA0A6003C2000 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		A0036E5E292EA0B8003C2000 /* NavigationCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCore.swift; sourceTree = "<group>"; };
+		A0036E63292EA119003C2000 /* ProgrammeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeView.swift; sourceTree = "<group>"; };
+		A0036E65292EA124003C2000 /* ProgrammeCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A0FC9EF128C8FA9C007D1BBD /* Frameworks */ = {
+		A0036E27292E9ECC003C2000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D6DF0F28E5B2DA007404BE /* ComposableArchitecture in Frameworks */,
+				A0036E59292E9FA6003C2000 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0FC9F0128C8FA9D007D1BBD /* Frameworks */ = {
+		A0036E37292E9ECD003C2000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0FC9F0B28C8FA9D007D1BBD /* Frameworks */ = {
+		A0036E41292E9ECD003C2000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,136 +79,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0FC9EEB28C8FA9C007D1BBD = {
+		A0036E21292E9ECC003C2000 = {
 			isa = PBXGroup;
 			children = (
-				A0FC9EF628C8FA9C007D1BBD /* magistrovak */,
-				A0FC9F0728C8FA9D007D1BBD /* magistrovakTests */,
-				A0FC9F1128C8FA9D007D1BBD /* magistrovakUITests */,
-				A0FC9EF528C8FA9C007D1BBD /* Products */,
+				A0036E2C292E9ECC003C2000 /* magistrovak */,
+				A0036E3D292E9ECD003C2000 /* magistrovakTests */,
+				A0036E47292E9ECD003C2000 /* magistrovakUITests */,
+				A0036E2B292E9ECC003C2000 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A0FC9EF528C8FA9C007D1BBD /* Products */ = {
+		A0036E2B292E9ECC003C2000 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0FC9EF428C8FA9C007D1BBD /* magistrovak.app */,
-				A0FC9F0428C8FA9D007D1BBD /* magistrovakTests.xctest */,
-				A0FC9F0E28C8FA9D007D1BBD /* magistrovakUITests.xctest */,
+				A0036E2A292E9ECC003C2000 /* magistrovak.app */,
+				A0036E3A292E9ECD003C2000 /* magistrovakTests.xctest */,
+				A0036E44292E9ECD003C2000 /* magistrovakUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A0FC9EF628C8FA9C007D1BBD /* magistrovak */ = {
+		A0036E2C292E9ECC003C2000 /* magistrovak */ = {
 			isa = PBXGroup;
 			children = (
-				A0FC9EF728C8FA9C007D1BBD /* magistrovakApp.swift */,
-				A0FC9EF928C8FA9C007D1BBD /* ContentView.swift */,
-				A0FC9F2F28C90047007D1BBD /* Components */,
-				A0FC9F2828C8FD9F007D1BBD /* Models */,
-				A0FC9F2428C8FC10007D1BBD /* Modules */,
-				A0FC9F2528C8FC27007D1BBD /* SupportingFiles */,
+				A0036E2D292E9ECC003C2000 /* App.swift */,
+				A0036E5B292EA08F003C2000 /* Navigation */,
+				A0036E60292EA0F3003C2000 /* Programme */,
+				A0036E5A292E9FF6003C2000 /* Models */,
+				A0036E31292E9ECD003C2000 /* Assets.xcassets */,
+				A0036E33292E9ECD003C2000 /* Preview Content */,
 			);
 			path = magistrovak;
 			sourceTree = "<group>";
 		};
-		A0FC9EFD28C8FA9D007D1BBD /* Preview Content */ = {
+		A0036E33292E9ECD003C2000 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A0FC9EFE28C8FA9D007D1BBD /* Preview Assets.xcassets */,
+				A0036E34292E9ECD003C2000 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A0FC9F0728C8FA9D007D1BBD /* magistrovakTests */ = {
+		A0036E3D292E9ECD003C2000 /* magistrovakTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0FC9F0828C8FA9D007D1BBD /* magistrovakTests.swift */,
+				A0036E3E292E9ECD003C2000 /* magistrovakTests.swift */,
 			);
 			path = magistrovakTests;
 			sourceTree = "<group>";
 		};
-		A0FC9F1128C8FA9D007D1BBD /* magistrovakUITests */ = {
+		A0036E47292E9ECD003C2000 /* magistrovakUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A0FC9F1228C8FA9D007D1BBD /* magistrovakUITests.swift */,
-				A0FC9F1428C8FA9D007D1BBD /* magistrovakUITestsLaunchTests.swift */,
+				A0036E48292E9ECD003C2000 /* magistrovakUITests.swift */,
+				A0036E4A292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift */,
 			);
 			path = magistrovakUITests;
 			sourceTree = "<group>";
 		};
-		A0FC9F2428C8FC10007D1BBD /* Modules */ = {
+		A0036E5A292E9FF6003C2000 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A0FC9F2C28C8FFA7007D1BBD /* Programme */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		A0FC9F2528C8FC27007D1BBD /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				A0FC9EFB28C8FA9D007D1BBD /* Assets.xcassets */,
-				A0FC9EFD28C8FA9D007D1BBD /* Preview Content */,
-				A0D6DF1228E5DBF9007404BE /* APIError.swift */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		A0FC9F2828C8FD9F007D1BBD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A0FC9F2B28C8FE56007D1BBD /* Mock */,
-				A0FC9F2928C8FE14007D1BBD /* Plan.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A0FC9F2B28C8FE56007D1BBD /* Mock */ = {
+		A0036E5B292EA08F003C2000 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				A0D6DF1028E5D2E3007404BE /* PlanMock.swift */,
+				A0036E5C292EA0A6003C2000 /* NavigationView.swift */,
+				A0036E5E292EA0B8003C2000 /* NavigationCore.swift */,
 			);
-			path = Mock;
+			path = Navigation;
 			sourceTree = "<group>";
 		};
-		A0FC9F2C28C8FFA7007D1BBD /* Programme */ = {
+		A0036E60292EA0F3003C2000 /* Programme */ = {
 			isa = PBXGroup;
 			children = (
-				A0FC9F2628C8FC9D007D1BBD /* ProgrammeView.swift */,
-				A0FC9F2D28C8FFBD007D1BBD /* ProgrammeCore.swift */,
+				A0036E63292EA119003C2000 /* ProgrammeView.swift */,
+				A0036E65292EA124003C2000 /* ProgrammeCore.swift */,
 			);
 			path = Programme;
-			sourceTree = "<group>";
-		};
-		A0FC9F2F28C90047007D1BBD /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				A0FC9F3028C9004F007D1BBD /* AsyncView */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		A0FC9F3028C9004F007D1BBD /* AsyncView */ = {
-			isa = PBXGroup;
-			children = (
-				A0FC9F3128C900BC007D1BBD /* AsyncView.swift */,
-				A0FC9F3328C90CDB007D1BBD /* ErrorView.swift */,
-				A0FC9F3728C9155E007D1BBD /* Loadable.swift */,
-			);
-			path = AsyncView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A0FC9EF328C8FA9C007D1BBD /* magistrovak */ = {
+		A0036E29292E9ECC003C2000 /* magistrovak */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0FC9F1828C8FA9D007D1BBD /* Build configuration list for PBXNativeTarget "magistrovak" */;
+			buildConfigurationList = A0036E4E292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovak" */;
 			buildPhases = (
-				A0FC9EF028C8FA9C007D1BBD /* Sources */,
-				A0FC9EF128C8FA9C007D1BBD /* Frameworks */,
-				A0FC9EF228C8FA9C007D1BBD /* Resources */,
+				A0036E26292E9ECC003C2000 /* Sources */,
+				A0036E27292E9ECC003C2000 /* Frameworks */,
+				A0036E28292E9ECC003C2000 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -226,112 +179,112 @@
 			);
 			name = magistrovak;
 			packageProductDependencies = (
-				A0D6DF0E28E5B2DA007404BE /* ComposableArchitecture */,
+				A0036E58292E9FA6003C2000 /* ComposableArchitecture */,
 			);
 			productName = magistrovak;
-			productReference = A0FC9EF428C8FA9C007D1BBD /* magistrovak.app */;
+			productReference = A0036E2A292E9ECC003C2000 /* magistrovak.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A0FC9F0328C8FA9D007D1BBD /* magistrovakTests */ = {
+		A0036E39292E9ECD003C2000 /* magistrovakTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0FC9F1B28C8FA9D007D1BBD /* Build configuration list for PBXNativeTarget "magistrovakTests" */;
+			buildConfigurationList = A0036E51292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovakTests" */;
 			buildPhases = (
-				A0FC9F0028C8FA9D007D1BBD /* Sources */,
-				A0FC9F0128C8FA9D007D1BBD /* Frameworks */,
-				A0FC9F0228C8FA9D007D1BBD /* Resources */,
+				A0036E36292E9ECD003C2000 /* Sources */,
+				A0036E37292E9ECD003C2000 /* Frameworks */,
+				A0036E38292E9ECD003C2000 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A0FC9F0628C8FA9D007D1BBD /* PBXTargetDependency */,
+				A0036E3C292E9ECD003C2000 /* PBXTargetDependency */,
 			);
 			name = magistrovakTests;
 			productName = magistrovakTests;
-			productReference = A0FC9F0428C8FA9D007D1BBD /* magistrovakTests.xctest */;
+			productReference = A0036E3A292E9ECD003C2000 /* magistrovakTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A0FC9F0D28C8FA9D007D1BBD /* magistrovakUITests */ = {
+		A0036E43292E9ECD003C2000 /* magistrovakUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0FC9F1E28C8FA9D007D1BBD /* Build configuration list for PBXNativeTarget "magistrovakUITests" */;
+			buildConfigurationList = A0036E54292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovakUITests" */;
 			buildPhases = (
-				A0FC9F0A28C8FA9D007D1BBD /* Sources */,
-				A0FC9F0B28C8FA9D007D1BBD /* Frameworks */,
-				A0FC9F0C28C8FA9D007D1BBD /* Resources */,
+				A0036E40292E9ECD003C2000 /* Sources */,
+				A0036E41292E9ECD003C2000 /* Frameworks */,
+				A0036E42292E9ECD003C2000 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A0FC9F1028C8FA9D007D1BBD /* PBXTargetDependency */,
+				A0036E46292E9ECD003C2000 /* PBXTargetDependency */,
 			);
 			name = magistrovakUITests;
 			productName = magistrovakUITests;
-			productReference = A0FC9F0E28C8FA9D007D1BBD /* magistrovakUITests.xctest */;
+			productReference = A0036E44292E9ECD003C2000 /* magistrovakUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A0FC9EEC28C8FA9C007D1BBD /* Project object */ = {
+		A0036E22292E9ECC003C2000 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					A0FC9EF328C8FA9C007D1BBD = {
-						CreatedOnToolsVersion = 13.4.1;
+					A0036E29292E9ECC003C2000 = {
+						CreatedOnToolsVersion = 14.1;
 					};
-					A0FC9F0328C8FA9D007D1BBD = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = A0FC9EF328C8FA9C007D1BBD;
+					A0036E39292E9ECD003C2000 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A0036E29292E9ECC003C2000;
 					};
-					A0FC9F0D28C8FA9D007D1BBD = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = A0FC9EF328C8FA9C007D1BBD;
+					A0036E43292E9ECD003C2000 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A0036E29292E9ECC003C2000;
 					};
 				};
 			};
-			buildConfigurationList = A0FC9EEF28C8FA9C007D1BBD /* Build configuration list for PBXProject "magistrovak" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = A0036E25292E9ECC003C2000 /* Build configuration list for PBXProject "magistrovak" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A0FC9EEB28C8FA9C007D1BBD;
+			mainGroup = A0036E21292E9ECC003C2000;
 			packageReferences = (
-				A0D6DF0D28E5B2DA007404BE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				A0036E57292E9FA6003C2000 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
-			productRefGroup = A0FC9EF528C8FA9C007D1BBD /* Products */;
+			productRefGroup = A0036E2B292E9ECC003C2000 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0FC9EF328C8FA9C007D1BBD /* magistrovak */,
-				A0FC9F0328C8FA9D007D1BBD /* magistrovakTests */,
-				A0FC9F0D28C8FA9D007D1BBD /* magistrovakUITests */,
+				A0036E29292E9ECC003C2000 /* magistrovak */,
+				A0036E39292E9ECD003C2000 /* magistrovakTests */,
+				A0036E43292E9ECD003C2000 /* magistrovakUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A0FC9EF228C8FA9C007D1BBD /* Resources */ = {
+		A0036E28292E9ECC003C2000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FC9EFF28C8FA9D007D1BBD /* Preview Assets.xcassets in Resources */,
-				A0FC9EFC28C8FA9D007D1BBD /* Assets.xcassets in Resources */,
+				A0036E35292E9ECD003C2000 /* Preview Assets.xcassets in Resources */,
+				A0036E32292E9ECD003C2000 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0FC9F0228C8FA9D007D1BBD /* Resources */ = {
+		A0036E38292E9ECD003C2000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0FC9F0C28C8FA9D007D1BBD /* Resources */ = {
+		A0036E42292E9ECD003C2000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,63 +294,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A0FC9EF028C8FA9C007D1BBD /* Sources */ = {
+		A0036E26292E9ECC003C2000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FC9F2A28C8FE14007D1BBD /* Plan.swift in Sources */,
-				A0FC9F3228C900BC007D1BBD /* AsyncView.swift in Sources */,
-				A0FC9F2E28C8FFBD007D1BBD /* ProgrammeCore.swift in Sources */,
-				A0FC9F2728C8FC9D007D1BBD /* ProgrammeView.swift in Sources */,
-				A0FC9F3428C90CDB007D1BBD /* ErrorView.swift in Sources */,
-				A0D6DF1128E5D2E3007404BE /* PlanMock.swift in Sources */,
-				A0FC9F3828C9155E007D1BBD /* Loadable.swift in Sources */,
-				A0FC9EFA28C8FA9C007D1BBD /* ContentView.swift in Sources */,
-				A0FC9EF828C8FA9C007D1BBD /* magistrovakApp.swift in Sources */,
-				A0D6DF1328E5DBF9007404BE /* APIError.swift in Sources */,
+				A0036E5F292EA0B8003C2000 /* NavigationCore.swift in Sources */,
+				A0036E66292EA124003C2000 /* ProgrammeCore.swift in Sources */,
+				A0036E64292EA119003C2000 /* ProgrammeView.swift in Sources */,
+				A0036E5D292EA0A6003C2000 /* NavigationView.swift in Sources */,
+				A0036E2E292E9ECC003C2000 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0FC9F0028C8FA9D007D1BBD /* Sources */ = {
+		A0036E36292E9ECD003C2000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FC9F0928C8FA9D007D1BBD /* magistrovakTests.swift in Sources */,
+				A0036E3F292E9ECD003C2000 /* magistrovakTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0FC9F0A28C8FA9D007D1BBD /* Sources */ = {
+		A0036E40292E9ECD003C2000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FC9F1328C8FA9D007D1BBD /* magistrovakUITests.swift in Sources */,
-				A0FC9F1528C8FA9D007D1BBD /* magistrovakUITestsLaunchTests.swift in Sources */,
+				A0036E49292E9ECD003C2000 /* magistrovakUITests.swift in Sources */,
+				A0036E4B292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0FC9F0628C8FA9D007D1BBD /* PBXTargetDependency */ = {
+		A0036E3C292E9ECD003C2000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0FC9EF328C8FA9C007D1BBD /* magistrovak */;
-			targetProxy = A0FC9F0528C8FA9D007D1BBD /* PBXContainerItemProxy */;
+			target = A0036E29292E9ECC003C2000 /* magistrovak */;
+			targetProxy = A0036E3B292E9ECD003C2000 /* PBXContainerItemProxy */;
 		};
-		A0FC9F1028C8FA9D007D1BBD /* PBXTargetDependency */ = {
+		A0036E46292E9ECD003C2000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0FC9EF328C8FA9C007D1BBD /* magistrovak */;
-			targetProxy = A0FC9F0F28C8FA9D007D1BBD /* PBXContainerItemProxy */;
+			target = A0036E29292E9ECC003C2000 /* magistrovak */;
+			targetProxy = A0036E45292E9ECD003C2000 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A0FC9F1628C8FA9D007D1BBD /* Debug */ = {
+		A0036E4C292E9ECD003C2000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -441,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -451,13 +399,13 @@
 			};
 			name = Debug;
 		};
-		A0FC9F1728C8FA9D007D1BBD /* Release */ = {
+		A0036E4D292E9ECD003C2000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -495,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -505,14 +453,14 @@
 			};
 			name = Release;
 		};
-		A0FC9F1928C8FA9D007D1BBD /* Debug */ = {
+		A0036E4F292E9ECD003C2000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"magistrovak/SupportingFiles/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"magistrovak/Preview Content\"";
 				DEVELOPMENT_TEAM = SF322564WJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -534,14 +482,14 @@
 			};
 			name = Debug;
 		};
-		A0FC9F1A28C8FA9D007D1BBD /* Release */ = {
+		A0036E50292E9ECD003C2000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"magistrovak/SupportingFiles/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"magistrovak/Preview Content\"";
 				DEVELOPMENT_TEAM = SF322564WJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -563,7 +511,7 @@
 			};
 			name = Release;
 		};
-		A0FC9F1C28C8FA9D007D1BBD /* Debug */ = {
+		A0036E52292E9ECD003C2000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -572,18 +520,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SF322564WJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = havrdovaLucie.magistrovakTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magistrovak.app/magistrovak";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magistrovak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/magistrovak";
 			};
 			name = Debug;
 		};
-		A0FC9F1D28C8FA9D007D1BBD /* Release */ = {
+		A0036E53292E9ECD003C2000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -592,18 +540,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SF322564WJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = havrdovaLucie.magistrovakTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magistrovak.app/magistrovak";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magistrovak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/magistrovak";
 			};
 			name = Release;
 		};
-		A0FC9F1F28C8FA9D007D1BBD /* Debug */ = {
+		A0036E55292E9ECD003C2000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -621,7 +569,7 @@
 			};
 			name = Debug;
 		};
-		A0FC9F2028C8FA9D007D1BBD /* Release */ = {
+		A0036E56292E9ECD003C2000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -642,38 +590,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0FC9EEF28C8FA9C007D1BBD /* Build configuration list for PBXProject "magistrovak" */ = {
+		A0036E25292E9ECC003C2000 /* Build configuration list for PBXProject "magistrovak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0FC9F1628C8FA9D007D1BBD /* Debug */,
-				A0FC9F1728C8FA9D007D1BBD /* Release */,
+				A0036E4C292E9ECD003C2000 /* Debug */,
+				A0036E4D292E9ECD003C2000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0FC9F1828C8FA9D007D1BBD /* Build configuration list for PBXNativeTarget "magistrovak" */ = {
+		A0036E4E292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0FC9F1928C8FA9D007D1BBD /* Debug */,
-				A0FC9F1A28C8FA9D007D1BBD /* Release */,
+				A0036E4F292E9ECD003C2000 /* Debug */,
+				A0036E50292E9ECD003C2000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0FC9F1B28C8FA9D007D1BBD /* Build configuration list for PBXNativeTarget "magistrovakTests" */ = {
+		A0036E51292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovakTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0FC9F1C28C8FA9D007D1BBD /* Debug */,
-				A0FC9F1D28C8FA9D007D1BBD /* Release */,
+				A0036E52292E9ECD003C2000 /* Debug */,
+				A0036E53292E9ECD003C2000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0FC9F1E28C8FA9D007D1BBD /* Build configuration list for PBXNativeTarget "magistrovakUITests" */ = {
+		A0036E54292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovakUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0FC9F1F28C8FA9D007D1BBD /* Debug */,
-				A0FC9F2028C8FA9D007D1BBD /* Release */,
+				A0036E55292E9ECD003C2000 /* Debug */,
+				A0036E56292E9ECD003C2000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -681,9 +629,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A0D6DF0D28E5B2DA007404BE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		A0036E57292E9FA6003C2000 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -692,12 +640,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A0D6DF0E28E5B2DA007404BE /* ComposableArchitecture */ = {
+		A0036E58292E9FA6003C2000 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A0D6DF0D28E5B2DA007404BE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = A0036E57292E9FA6003C2000 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = A0FC9EEC28C8FA9C007D1BBD /* Project object */;
+	rootObject = A0036E22292E9ECC003C2000 /* Project object */;
 }
