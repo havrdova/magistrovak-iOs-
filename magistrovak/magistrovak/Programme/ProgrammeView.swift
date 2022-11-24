@@ -4,8 +4,16 @@ import SwiftUI
 // MARK: - Programme View
 
 struct ProgrammeView: View {
+    let store: StoreOf<Programme>
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        WithViewStore(store) { viewStore in
+            List {
+                ForEach(viewStore.events) { event in
+                    CellView(title: event.name, subtitle: event.duration)
+                }
+            }
+        }
     }
 }
 
@@ -13,6 +21,9 @@ struct ProgrammeView: View {
 
 struct ProgrammeView_Previews: PreviewProvider {
     static var previews: some View {
-        ProgrammeView()
+        ProgrammeView(store: Store(
+            initialState: Programme.State(),
+            reducer: Programme()
+        ))
     }
 }

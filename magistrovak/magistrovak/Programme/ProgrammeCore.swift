@@ -5,7 +5,7 @@ import Foundation
 
 struct Programme: ReducerProtocol {
     struct State: Equatable {
-
+        var events: [Event] = []
     }
 
     enum Action: Equatable {
@@ -25,6 +25,4 @@ struct Programme: ReducerProtocol {
             }
         }
     }
-
-
 }
