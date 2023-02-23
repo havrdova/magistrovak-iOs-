@@ -7,185 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0036E2E292E9ECC003C2000 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E2D292E9ECC003C2000 /* App.swift */; };
-		A0036E32292E9ECD003C2000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0036E31292E9ECD003C2000 /* Assets.xcassets */; };
-		A0036E35292E9ECD003C2000 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0036E34292E9ECD003C2000 /* Preview Assets.xcassets */; };
-		A0036E3F292E9ECD003C2000 /* magistrovakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E3E292E9ECD003C2000 /* magistrovakTests.swift */; };
-		A0036E49292E9ECD003C2000 /* magistrovakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E48292E9ECD003C2000 /* magistrovakUITests.swift */; };
-		A0036E4B292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E4A292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift */; };
-		A0036E59292E9FA6003C2000 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A0036E58292E9FA6003C2000 /* ComposableArchitecture */; };
-		A0036E5D292EA0A6003C2000 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E5C292EA0A6003C2000 /* NavigationView.swift */; };
-		A0036E5F292EA0B8003C2000 /* NavigationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E5E292EA0B8003C2000 /* NavigationCore.swift */; };
-		A0036E64292EA119003C2000 /* ProgrammeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E63292EA119003C2000 /* ProgrammeView.swift */; };
-		A0036E66292EA124003C2000 /* ProgrammeCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E65292EA124003C2000 /* ProgrammeCore.swift */; };
-		A0036E68292EA4D0003C2000 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0036E67292EA4D0003C2000 /* Event.swift */; };
-		A08A12B2292FBD83002C675A /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A12B1292FBD83002C675A /* CellView.swift */; };
+		A0639AD329A758CC0046E796 /* Magistrovak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0639AD229A758CC0046E796 /* Magistrovak.swift */; };
+		A0639AE629A769920046E796 /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = A0639AE529A769920046E796 /* TabBar */; };
+		A0639AE729A78DDE0046E796 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0639AE029A75A2E0046E796 /* README.md */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A0036E3B292E9ECD003C2000 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0036E22292E9ECC003C2000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0036E29292E9ECC003C2000;
-			remoteInfo = magistrovak;
-		};
-		A0036E45292E9ECD003C2000 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0036E22292E9ECC003C2000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0036E29292E9ECC003C2000;
-			remoteInfo = magistrovak;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		A0036E2A292E9ECC003C2000 /* magistrovak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magistrovak.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0036E2D292E9ECC003C2000 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		A0036E31292E9ECD003C2000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0036E34292E9ECD003C2000 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A0036E3A292E9ECD003C2000 /* magistrovakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magistrovakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0036E3E292E9ECD003C2000 /* magistrovakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakTests.swift; sourceTree = "<group>"; };
-		A0036E44292E9ECD003C2000 /* magistrovakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magistrovakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0036E48292E9ECD003C2000 /* magistrovakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakUITests.swift; sourceTree = "<group>"; };
-		A0036E4A292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magistrovakUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A0036E5C292EA0A6003C2000 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
-		A0036E5E292EA0B8003C2000 /* NavigationCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCore.swift; sourceTree = "<group>"; };
-		A0036E63292EA119003C2000 /* ProgrammeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeView.swift; sourceTree = "<group>"; };
-		A0036E65292EA124003C2000 /* ProgrammeCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeCore.swift; sourceTree = "<group>"; };
-		A0036E67292EA4D0003C2000 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		A08A12B1292FBD83002C675A /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		A0639ACF29A758CC0046E796 /* magistrovak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magistrovak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0639AD229A758CC0046E796 /* Magistrovak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magistrovak.swift; sourceTree = "<group>"; };
+		A0639AD629A758CD0046E796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0639AD929A758CD0046E796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0639AE029A75A2E0046E796 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A0639AE229A75C600046E796 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
+		A0639AE329A75D250046E796 /* Infrastructure */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Infrastructure; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A0036E27292E9ECC003C2000 /* Frameworks */ = {
+		A0639ACC29A758CC0046E796 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0036E59292E9FA6003C2000 /* ComposableArchitecture in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0036E37292E9ECD003C2000 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0036E41292E9ECD003C2000 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A0639AE629A769920046E796 /* TabBar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0036E21292E9ECC003C2000 = {
+		A0639AC629A758CC0046E796 = {
 			isa = PBXGroup;
 			children = (
-				A0036E2C292E9ECC003C2000 /* magistrovak */,
-				A0036E3D292E9ECD003C2000 /* magistrovakTests */,
-				A0036E47292E9ECD003C2000 /* magistrovakUITests */,
-				A0036E2B292E9ECC003C2000 /* Products */,
+				A0639AE029A75A2E0046E796 /* README.md */,
+				A0639AD129A758CC0046E796 /* App */,
+				A0639AD029A758CC0046E796 /* Products */,
+				A0639AE429A769920046E796 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A0036E2B292E9ECC003C2000 /* Products */ = {
+		A0639AD029A758CC0046E796 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0036E2A292E9ECC003C2000 /* magistrovak.app */,
-				A0036E3A292E9ECD003C2000 /* magistrovakTests.xctest */,
-				A0036E44292E9ECD003C2000 /* magistrovakUITests.xctest */,
+				A0639ACF29A758CC0046E796 /* magistrovak.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A0036E2C292E9ECC003C2000 /* magistrovak */ = {
+		A0639AD129A758CC0046E796 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				A0036E2D292E9ECC003C2000 /* App.swift */,
-				A08A12B0292FBD6E002C675A /* ViewComponents */,
-				A0036E5B292EA08F003C2000 /* Navigation */,
-				A0036E60292EA0F3003C2000 /* Programme */,
-				A0036E5A292E9FF6003C2000 /* Models */,
-				A0036E31292E9ECD003C2000 /* Assets.xcassets */,
-				A0036E33292E9ECD003C2000 /* Preview Content */,
+				A0639AD229A758CC0046E796 /* Magistrovak.swift */,
+				A0639AE229A75C600046E796 /* Feature */,
+				A0639AE329A75D250046E796 /* Infrastructure */,
+				A0639AD629A758CD0046E796 /* Assets.xcassets */,
+				A0639AD829A758CD0046E796 /* Preview Content */,
 			);
-			path = magistrovak;
+			path = App;
 			sourceTree = "<group>";
 		};
-		A0036E33292E9ECD003C2000 /* Preview Content */ = {
+		A0639AD829A758CD0046E796 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A0036E34292E9ECD003C2000 /* Preview Assets.xcassets */,
+				A0639AD929A758CD0046E796 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A0036E3D292E9ECD003C2000 /* magistrovakTests */ = {
+		A0639AE429A769920046E796 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0036E3E292E9ECD003C2000 /* magistrovakTests.swift */,
 			);
-			path = magistrovakTests;
-			sourceTree = "<group>";
-		};
-		A0036E47292E9ECD003C2000 /* magistrovakUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A0036E48292E9ECD003C2000 /* magistrovakUITests.swift */,
-				A0036E4A292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift */,
-			);
-			path = magistrovakUITests;
-			sourceTree = "<group>";
-		};
-		A0036E5A292E9FF6003C2000 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A0036E67292EA4D0003C2000 /* Event.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A0036E5B292EA08F003C2000 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				A0036E5C292EA0A6003C2000 /* NavigationView.swift */,
-				A0036E5E292EA0B8003C2000 /* NavigationCore.swift */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		A0036E60292EA0F3003C2000 /* Programme */ = {
-			isa = PBXGroup;
-			children = (
-				A0036E63292EA119003C2000 /* ProgrammeView.swift */,
-				A0036E65292EA124003C2000 /* ProgrammeCore.swift */,
-			);
-			path = Programme;
-			sourceTree = "<group>";
-		};
-		A08A12B0292FBD6E002C675A /* ViewComponents */ = {
-			isa = PBXGroup;
-			children = (
-				A08A12B1292FBD83002C675A /* CellView.swift */,
-			);
-			path = ViewComponents;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A0036E29292E9ECC003C2000 /* magistrovak */ = {
+		A0639ACE29A758CC0046E796 /* magistrovak */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0036E4E292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovak" */;
+			buildConfigurationList = A0639ADD29A758CD0046E796 /* Build configuration list for PBXNativeTarget "magistrovak" */;
 			buildPhases = (
-				A0036E26292E9ECC003C2000 /* Sources */,
-				A0036E27292E9ECC003C2000 /* Frameworks */,
-				A0036E28292E9ECC003C2000 /* Resources */,
+				A0639ACB29A758CC0046E796 /* Sources */,
+				A0639ACC29A758CC0046E796 /* Frameworks */,
+				A0639ACD29A758CC0046E796 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -193,72 +96,28 @@
 			);
 			name = magistrovak;
 			packageProductDependencies = (
-				A0036E58292E9FA6003C2000 /* ComposableArchitecture */,
+				A0639AE529A769920046E796 /* TabBar */,
 			);
 			productName = magistrovak;
-			productReference = A0036E2A292E9ECC003C2000 /* magistrovak.app */;
+			productReference = A0639ACF29A758CC0046E796 /* magistrovak.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A0036E39292E9ECD003C2000 /* magistrovakTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0036E51292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovakTests" */;
-			buildPhases = (
-				A0036E36292E9ECD003C2000 /* Sources */,
-				A0036E37292E9ECD003C2000 /* Frameworks */,
-				A0036E38292E9ECD003C2000 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0036E3C292E9ECD003C2000 /* PBXTargetDependency */,
-			);
-			name = magistrovakTests;
-			productName = magistrovakTests;
-			productReference = A0036E3A292E9ECD003C2000 /* magistrovakTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A0036E43292E9ECD003C2000 /* magistrovakUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0036E54292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovakUITests" */;
-			buildPhases = (
-				A0036E40292E9ECD003C2000 /* Sources */,
-				A0036E41292E9ECD003C2000 /* Frameworks */,
-				A0036E42292E9ECD003C2000 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0036E46292E9ECD003C2000 /* PBXTargetDependency */,
-			);
-			name = magistrovakUITests;
-			productName = magistrovakUITests;
-			productReference = A0036E44292E9ECD003C2000 /* magistrovakUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A0036E22292E9ECC003C2000 /* Project object */ = {
+		A0639AC729A758CC0046E796 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					A0036E29292E9ECC003C2000 = {
-						CreatedOnToolsVersion = 14.1;
-					};
-					A0036E39292E9ECD003C2000 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = A0036E29292E9ECC003C2000;
-					};
-					A0036E43292E9ECD003C2000 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = A0036E29292E9ECC003C2000;
+					A0639ACE29A758CC0046E796 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = A0036E25292E9ECC003C2000 /* Build configuration list for PBXProject "magistrovak" */;
+			buildConfigurationList = A0639ACA29A758CC0046E796 /* Build configuration list for PBXProject "magistrovak" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -266,96 +125,40 @@
 				en,
 				Base,
 			);
-			mainGroup = A0036E21292E9ECC003C2000;
-			packageReferences = (
-				A0036E57292E9FA6003C2000 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-			);
-			productRefGroup = A0036E2B292E9ECC003C2000 /* Products */;
+			mainGroup = A0639AC629A758CC0046E796;
+			productRefGroup = A0639AD029A758CC0046E796 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0036E29292E9ECC003C2000 /* magistrovak */,
-				A0036E39292E9ECD003C2000 /* magistrovakTests */,
-				A0036E43292E9ECD003C2000 /* magistrovakUITests */,
+				A0639ACE29A758CC0046E796 /* magistrovak */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A0036E28292E9ECC003C2000 /* Resources */ = {
+		A0639ACD29A758CC0046E796 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0036E35292E9ECD003C2000 /* Preview Assets.xcassets in Resources */,
-				A0036E32292E9ECD003C2000 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0036E38292E9ECD003C2000 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0036E42292E9ECD003C2000 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A0639AE729A78DDE0046E796 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A0036E26292E9ECC003C2000 /* Sources */ = {
+		A0639ACB29A758CC0046E796 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0036E5F292EA0B8003C2000 /* NavigationCore.swift in Sources */,
-				A0036E66292EA124003C2000 /* ProgrammeCore.swift in Sources */,
-				A0036E64292EA119003C2000 /* ProgrammeView.swift in Sources */,
-				A0036E5D292EA0A6003C2000 /* NavigationView.swift in Sources */,
-				A0036E68292EA4D0003C2000 /* Event.swift in Sources */,
-				A0036E2E292E9ECC003C2000 /* App.swift in Sources */,
-				A08A12B2292FBD83002C675A /* CellView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0036E36292E9ECD003C2000 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0036E3F292E9ECD003C2000 /* magistrovakTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0036E40292E9ECD003C2000 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0036E49292E9ECD003C2000 /* magistrovakUITests.swift in Sources */,
-				A0036E4B292E9ECD003C2000 /* magistrovakUITestsLaunchTests.swift in Sources */,
+				A0639AD329A758CC0046E796 /* Magistrovak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A0036E3C292E9ECD003C2000 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0036E29292E9ECC003C2000 /* magistrovak */;
-			targetProxy = A0036E3B292E9ECD003C2000 /* PBXContainerItemProxy */;
-		};
-		A0036E46292E9ECD003C2000 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0036E29292E9ECC003C2000 /* magistrovak */;
-			targetProxy = A0036E45292E9ECD003C2000 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		A0036E4C292E9ECD003C2000 /* Debug */ = {
+		A0639ADB29A758CD0046E796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -405,7 +208,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -415,7 +218,7 @@
 			};
 			name = Debug;
 		};
-		A0036E4D292E9ECD003C2000 /* Release */ = {
+		A0639ADC29A758CD0046E796 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -459,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -469,14 +272,14 @@
 			};
 			name = Release;
 		};
-		A0036E4F292E9ECD003C2000 /* Debug */ = {
+		A0639ADE29A758CD0046E796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"magistrovak/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = SF322564WJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -485,6 +288,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,14 +302,14 @@
 			};
 			name = Debug;
 		};
-		A0036E50292E9ECD003C2000 /* Release */ = {
+		A0639ADF29A758CD0046E796 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"magistrovak/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = SF322564WJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -514,6 +318,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,144 +329,38 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A0036E52292E9ECD003C2000 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SF322564WJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = havrdovaLucie.magistrovakTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magistrovak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/magistrovak";
-			};
-			name = Debug;
-		};
-		A0036E53292E9ECD003C2000 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SF322564WJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = havrdovaLucie.magistrovakTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magistrovak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/magistrovak";
-			};
-			name = Release;
-		};
-		A0036E55292E9ECD003C2000 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SF322564WJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = havrdovaLucie.magistrovakUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = magistrovak;
-			};
-			name = Debug;
-		};
-		A0036E56292E9ECD003C2000 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SF322564WJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = havrdovaLucie.magistrovakUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = magistrovak;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0036E25292E9ECC003C2000 /* Build configuration list for PBXProject "magistrovak" */ = {
+		A0639ACA29A758CC0046E796 /* Build configuration list for PBXProject "magistrovak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0036E4C292E9ECD003C2000 /* Debug */,
-				A0036E4D292E9ECD003C2000 /* Release */,
+				A0639ADB29A758CD0046E796 /* Debug */,
+				A0639ADC29A758CD0046E796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0036E4E292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovak" */ = {
+		A0639ADD29A758CD0046E796 /* Build configuration list for PBXNativeTarget "magistrovak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0036E4F292E9ECD003C2000 /* Debug */,
-				A0036E50292E9ECD003C2000 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0036E51292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovakTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0036E52292E9ECD003C2000 /* Debug */,
-				A0036E53292E9ECD003C2000 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0036E54292E9ECD003C2000 /* Build configuration list for PBXNativeTarget "magistrovakUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0036E55292E9ECD003C2000 /* Debug */,
-				A0036E56292E9ECD003C2000 /* Release */,
+				A0639ADE29A758CD0046E796 /* Debug */,
+				A0639ADF29A758CD0046E796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		A0036E57292E9FA6003C2000 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		A0036E58292E9FA6003C2000 /* ComposableArchitecture */ = {
+		A0639AE529A769920046E796 /* TabBar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A0036E57292E9FA6003C2000 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
+			productName = TabBar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = A0036E22292E9ECC003C2000 /* Project object */;
+	rootObject = A0639AC729A758CC0046E796 /* Project object */;
 }
