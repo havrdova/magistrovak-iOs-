@@ -10,6 +10,7 @@
 		A0639AD329A758CC0046E796 /* Magistrovak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0639AD229A758CC0046E796 /* Magistrovak.swift */; };
 		A0639AE629A769920046E796 /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = A0639AE529A769920046E796 /* TabBar */; };
 		A0639AE729A78DDE0046E796 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0639AE029A75A2E0046E796 /* README.md */; };
+		A0639AEA29A7AB9E0046E796 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A0639AE929A7AB9E0046E796 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0639AEA29A7AB9E0046E796 /* ComposableArchitecture in Frameworks */,
 				A0639AE629A769920046E796 /* TabBar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +87,7 @@
 			name = magistrovak;
 			packageProductDependencies = (
 				A0639AE529A769920046E796 /* TabBar */,
+				A0639AE929A7AB9E0046E796 /* ComposableArchitecture */,
 			);
 			productName = magistrovak;
 			productReference = A0639ACF29A758CC0046E796 /* magistrovak.app */;
@@ -105,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A0639ACA29A758CC0046E796 /* Build configuration list for PBXProject "magistrovak" */;
+			buildConfigurationList = A0639ACA29A758CC0046E796 /* Build configuration list for PBXProject "Magistrovak" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,6 +117,9 @@
 				Base,
 			);
 			mainGroup = A0639AC629A758CC0046E796;
+			packageReferences = (
+				A0639AE829A7AB9E0046E796 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = A0639AD029A758CC0046E796 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -323,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0639ACA29A758CC0046E796 /* Build configuration list for PBXProject "magistrovak" */ = {
+		A0639ACA29A758CC0046E796 /* Build configuration list for PBXProject "Magistrovak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0639ADB29A758CD0046E796 /* Debug */,
@@ -343,10 +349,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A0639AE829A7AB9E0046E796 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		A0639AE529A769920046E796 /* TabBar */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TabBar;
+		};
+		A0639AE929A7AB9E0046E796 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0639AE829A7AB9E0046E796 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
