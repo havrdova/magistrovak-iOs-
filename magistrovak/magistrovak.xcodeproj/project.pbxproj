@@ -15,8 +15,6 @@
 /* Begin PBXFileReference section */
 		A0639ACF29A758CC0046E796 /* magistrovak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magistrovak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0639AD229A758CC0046E796 /* Magistrovak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magistrovak.swift; sourceTree = "<group>"; };
-		A0639AD629A758CD0046E796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0639AD929A758CD0046E796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0639AE029A75A2E0046E796 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A0639AE229A75C600046E796 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
 		A0639AE329A75D250046E796 /* Infrastructure */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Infrastructure; sourceTree = "<group>"; };
@@ -58,18 +56,8 @@
 				A0639AD229A758CC0046E796 /* Magistrovak.swift */,
 				A0639AE229A75C600046E796 /* Feature */,
 				A0639AE329A75D250046E796 /* Infrastructure */,
-				A0639AD629A758CD0046E796 /* Assets.xcassets */,
-				A0639AD829A758CD0046E796 /* Preview Content */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		A0639AD829A758CD0046E796 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A0639AD929A758CD0046E796 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		A0639AE429A769920046E796 /* Frameworks */ = {
