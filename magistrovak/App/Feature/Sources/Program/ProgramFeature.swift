@@ -14,7 +14,8 @@ public struct ProgramFeature: ReducerProtocol {
     // MARK: Action
 
     public enum Action: Equatable {
-
+        case fetchProgram
+        case productLoaded
     }
 
     // MARK: Reducer
@@ -22,7 +23,10 @@ public struct ProgramFeature: ReducerProtocol {
     public var body: some ReducerProtocol<State, Action> {
         Reduce { _, action in
             switch action {
-            default:
+            case .fetchProgram:
+                return .none
+
+            case .productLoaded:
                 return .none
             }
         }
