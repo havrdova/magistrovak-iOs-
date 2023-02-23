@@ -1,6 +1,7 @@
 import XCTest
 
-final class TabBarTests: XCTestCase {
+final class ProgramTests: XCTestCase {
+
     func testExample() throws {
         // TODO: implement
     }
