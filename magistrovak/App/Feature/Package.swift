@@ -32,7 +32,9 @@ let package = Package(
         .target(
             name: "Program",
             dependencies: [
-                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
+                .product(name: "APIClient", package: "Infrastructure"),
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                .product(name: "Models", package: "Infrastructure")
             ]
         ),
         .testTarget(
@@ -44,7 +46,10 @@ let package = Package(
 
         .target(
             name: "TabBar",
-            dependencies: []
+            dependencies: [
+                "Program",
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
+            ]
         ),
         .testTarget(
             name: "TabBarTests",

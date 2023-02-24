@@ -1,4 +1,5 @@
 import ComposableArchitecture
+import Models
 import SwiftUI
 
 // MARK: - Program View
@@ -10,9 +11,30 @@ public struct ProgramView: View {
         self.store = store
     }
 
+    // MARK: Body
+
     public var body: some View {
-        // TODO: implement
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        WithViewStore(store) { viewStore in
+            List {
+                ForEach(viewStore.program) { event in
+                    eventCell(event)
+                }
+            }
+            .navigationTitle("Novinky") // TODO: move to strings
+            .task {
+                viewStore.send(.fetchProgram)
+            }
+        }
+    }
+
+    // MARK: Cell View
+
+    func eventCell(_ event: Event) -> some View {
+        VStack(alignment: .leading) {
+            Text(event.name)
+            Text(event.startTime)
+            Text(event.endTime)
+        }
     }
 }
 

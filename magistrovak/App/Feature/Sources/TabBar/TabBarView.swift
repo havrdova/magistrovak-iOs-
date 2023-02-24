@@ -1,3 +1,5 @@
+import ComposableArchitecture
+import Program
 import SwiftUI
 
 // MARK: - TabBar View
@@ -7,10 +9,12 @@ public struct TabBarView: View {
     public init() {}
 
     public var body: some View {
-        VStack {
-            Text("Hello, world!")
-        }
-        .padding()
+        ProgramView(
+            store: Store(
+                initialState: ProgramFeature.State(),
+                reducer: ProgramFeature()
+            )
+        )
     }
 }
 
