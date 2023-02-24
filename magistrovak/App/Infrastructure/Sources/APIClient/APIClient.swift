@@ -6,6 +6,7 @@ import Models
 
 public struct APIClient {
     public var getProgramList: () -> [Event]
+    public var getNewsList: () -> [News]
 }
 
 // MARK: - Dependency Key

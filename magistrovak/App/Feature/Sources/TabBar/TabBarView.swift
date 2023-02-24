@@ -1,4 +1,5 @@
 import ComposableArchitecture
+import News
 import Program
 import SwiftUI
 
@@ -9,6 +10,13 @@ public struct TabBarView: View {
     public init() {}
 
     public var body: some View {
+//        NewsView(
+//            store: Store(
+//                initialState: NewsFeature.State(),
+//                reducer: NewsFeature()
+//            )
+//        )
+
         ProgramView(
             store: Store(
                 initialState: ProgramFeature.State(),

@@ -20,7 +20,7 @@ public struct ProgramView: View {
                     eventCell(event)
                 }
             }
-            .navigationTitle("Novinky") // TODO: move to strings
+            .navigationTitle("Program") // TODO: move to strings
             .task {
                 viewStore.send(.fetchProgram)
             }

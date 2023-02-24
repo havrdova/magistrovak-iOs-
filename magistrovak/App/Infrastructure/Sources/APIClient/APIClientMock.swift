@@ -10,8 +10,13 @@ extension APIClient: DependencyKey {
     }
 
     public static var mockValue: APIClient {
-        return APIClient {
-            return Event.mockData
-        }
+        return APIClient(
+            getProgramList: {
+                return Event.mockData
+            },
+            getNewsList: {
+                return News.mockData
+            }
+        )
     }
 }

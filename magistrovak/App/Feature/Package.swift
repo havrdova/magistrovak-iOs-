@@ -9,6 +9,10 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
+            name: "News",
+            targets: ["News"]
+        ),
+        .library(
             name: "Program",
             targets: ["Program"]
         ),
@@ -26,6 +30,21 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
+
+        // MARK: - News Target
+
+        .target(
+            name: "News",
+            dependencies: [
+                .product(name: "APIClient", package: "Infrastructure"),
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                .product(name: "Models", package: "Infrastructure")
+            ]
+        ),
+        .testTarget(
+            name: "NewsTests",
+            dependencies: []
+        ),
 
         // MARK: - Program Target
 
@@ -47,6 +66,7 @@ let package = Package(
         .target(
             name: "TabBar",
             dependencies: [
+                "News",
                 "Program",
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
             ]
