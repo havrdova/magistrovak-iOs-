@@ -6,23 +6,36 @@ import SwiftUI
 // MARK: - TabBar View
 
 public struct TabBarView: View {
+    let store: StoreOf<TabBarFeature>
 
-    public init() {}
+    public init(store: StoreOf<TabBarFeature>) {
+        self.store = store
+    }
 
     public var body: some View {
-//        NewsView(
-//            store: Store(
-//                initialState: NewsFeature.State(),
-//                reducer: NewsFeature()
-//            )
-//        )
+        WithViewStore(store) { viewStore in
+            TabView {
+                ProgramView(
+                    store: self.store.scope(
+                        state: \.programState,
+                        action: TabBarFeature.Action.programAction
+                    )
+                )
+                .tabItem {
+                    Label("Program", systemImage: "calendar") // TODO: add image
+                }
 
-        ProgramView(
-            store: Store(
-                initialState: ProgramFeature.State(),
-                reducer: ProgramFeature()
-            )
-        )
+                NewsView(
+                    store: self.store.scope(
+                        state: \.newsState,
+                        action: TabBarFeature.Action.newsAction
+                    )
+                )
+                .tabItem {
+                    Label("Novinky", systemImage: "newspaper") // TODO: add image
+                }
+            }
+        }
     }
 }
 
@@ -30,6 +43,11 @@ public struct TabBarView: View {
 
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarView()
+        TabBarView(
+            store: Store(
+                initialState: TabBarFeature.State(),
+                reducer: TabBarFeature()
+            )
+        )
     }
 }

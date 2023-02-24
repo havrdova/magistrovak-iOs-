@@ -1,3 +1,4 @@
+import ComposableArchitecture
 import SwiftUI
 import TabBar
 
@@ -6,7 +7,12 @@ struct Magistrovak: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                TabBarView()
+                TabBarView(
+                    store: Store(
+                        initialState: TabBarFeature.State(),
+                        reducer: TabBarFeature()
+                    )
+                )
             }
         }
     }

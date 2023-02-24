@@ -10,6 +10,7 @@
 		A0639AD329A758CC0046E796 /* Magistrovak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0639AD229A758CC0046E796 /* Magistrovak.swift */; };
 		A0639AE629A769920046E796 /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = A0639AE529A769920046E796 /* TabBar */; };
 		A0639AE729A78DDE0046E796 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0639AE029A75A2E0046E796 /* README.md */; };
+		A0C22B3529A96C3000CC63AA /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A0C22B3429A96C3000CC63AA /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C22B3529A96C3000CC63AA /* ComposableArchitecture in Frameworks */,
 				A0639AE629A769920046E796 /* TabBar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +89,7 @@
 			name = magistrovak;
 			packageProductDependencies = (
 				A0639AE529A769920046E796 /* TabBar */,
+				A0C22B3429A96C3000CC63AA /* ComposableArchitecture */,
 			);
 			productName = magistrovak;
 			productReference = A0639ACF29A758CC0046E796 /* magistrovak.app */;
@@ -363,6 +366,11 @@
 		A0639AE529A769920046E796 /* TabBar */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TabBar;
+		};
+		A0C22B3429A96C3000CC63AA /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0639AE829A7AB9E0046E796 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
