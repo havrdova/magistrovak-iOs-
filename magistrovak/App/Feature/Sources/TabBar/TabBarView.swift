@@ -1,4 +1,5 @@
 import ComposableArchitecture
+import Map
 import News
 import Program
 import SwiftUI
@@ -33,6 +34,16 @@ public struct TabBarView: View {
                 )
                 .tabItem {
                     Label("Novinky", systemImage: "newspaper") // TODO: add image
+                }
+
+                MapView(
+                    store: self.store.scope(
+                        state: \.mapState,
+                        action: TabBarFeature.Action.mapAction
+                    )
+                )
+                .tabItem {
+                    Label("Mapa", systemImage: "map") // TODO: add image
                 }
             }
         }

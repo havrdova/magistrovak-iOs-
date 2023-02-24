@@ -1,7 +1,8 @@
 import ComposableArchitecture
 import Foundation
-import Program
+import Map
 import News
+import Program
 
 // MARK: - TabBar Feature
 
@@ -14,10 +15,12 @@ public struct TabBarFeature: ReducerProtocol {
     public struct State: Equatable {
         var programState: ProgramFeature.State
         var newsState: NewsFeature.State
+        var mapState: MapFeature.State
 
         public init() {
             self.programState = ProgramFeature.State()
             self.newsState = NewsFeature.State()
+            self.mapState = MapFeature.State()
         }
     }
 
@@ -26,6 +29,7 @@ public struct TabBarFeature: ReducerProtocol {
     public enum Action: Equatable {
         case programAction(ProgramFeature.Action)
         case newsAction(NewsFeature.Action)
+        case mapAction(MapFeature.Action)
     }
 
     // MARK: Reducer
@@ -36,7 +40,10 @@ public struct TabBarFeature: ReducerProtocol {
             case .programAction:
                 return .none
 
-            case .newsAction(_):
+            case .newsAction:
+                return .none
+
+            case .mapAction:
                 return .none
             }
         }
@@ -44,8 +51,13 @@ public struct TabBarFeature: ReducerProtocol {
         Scope(state: \.programState, action: /Action.programAction) {
             ProgramFeature()
         }
+
         Scope(state: \.newsState, action: /Action.newsAction) {
             NewsFeature()
+        }
+
+        Scope(state: \.mapState, action: /Action.mapAction) {
+            MapFeature()
         }
     }
 }
