@@ -4,6 +4,14 @@ import News
 import Program
 import SwiftUI
 
+// MARK: - Selected view
+
+public enum Tabs: String {
+    case program
+    case news
+    case map
+}
+
 // MARK: - TabBar View
 
 public struct TabBarView: View {
@@ -15,13 +23,19 @@ public struct TabBarView: View {
 
     public var body: some View {
         WithViewStore(store) { viewStore in
-            TabView {
+            TabView(
+                selection: viewStore.binding(
+                    get: \.selectedTab,
+                    send: TabBarFeature.Action.setSelectedView
+                )
+            ) {
                 ProgramView(
                     store: self.store.scope(
                         state: \.programState,
                         action: TabBarFeature.Action.programAction
                     )
                 )
+                .tag(Tabs.program)
                 .tabItem {
                     Label("Program", systemImage: "calendar") // TODO: add image
                 }
@@ -32,6 +46,7 @@ public struct TabBarView: View {
                         action: TabBarFeature.Action.newsAction
                     )
                 )
+                .tag(Tabs.news)
                 .tabItem {
                     Label("Novinky", systemImage: "newspaper") // TODO: add image
                 }
@@ -42,10 +57,12 @@ public struct TabBarView: View {
                         action: TabBarFeature.Action.mapAction
                     )
                 )
+                .tag(Tabs.map)
                 .tabItem {
                     Label("Mapa", systemImage: "map") // TODO: add image
                 }
             }
+            .navigationTitle(viewStore.selectedTab.rawValue)
         }
     }
 }

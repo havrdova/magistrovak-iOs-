@@ -14,6 +14,7 @@ struct Magistrovak: App {
                     )
                 )
             }
+            .navigationViewStyle(.stack)
         }
     }
 }

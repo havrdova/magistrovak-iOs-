@@ -13,6 +13,8 @@ public struct TabBarFeature: ReducerProtocol {
     // MARK: State
 
     public struct State: Equatable {
+        var selectedTab: Tabs = .program
+
         var programState: ProgramFeature.State
         var newsState: NewsFeature.State
         var mapState: MapFeature.State
@@ -30,6 +32,8 @@ public struct TabBarFeature: ReducerProtocol {
         case programAction(ProgramFeature.Action)
         case newsAction(NewsFeature.Action)
         case mapAction(MapFeature.Action)
+
+        case setSelectedView(Tabs)
     }
 
     // MARK: Reducer
@@ -44,6 +48,10 @@ public struct TabBarFeature: ReducerProtocol {
                 return .none
 
             case .mapAction:
+                return .none
+
+            case let .setSelectedView(tab):
+                state.selectedTab = tab
                 return .none
             }
         }

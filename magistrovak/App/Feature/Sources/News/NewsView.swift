@@ -20,7 +20,6 @@ public struct NewsView: View {
                     newsCell(news)
                 }
             }
-            .navigationTitle("Novinky") // TODO: move to strings
             .task {
                 viewStore.send(.fetchProgram)
             }
