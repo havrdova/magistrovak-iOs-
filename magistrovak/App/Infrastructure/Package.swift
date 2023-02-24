@@ -13,6 +13,10 @@ let package = Package(
             targets: ["CoreToolkit"]
         ),
         .library(
+            name: "Models",
+            targets: ["Models"]
+        ),
+        .library(
             name: "UIToolkit",
             targets: ["UIToolkit"]
         )
@@ -30,6 +34,13 @@ let package = Package(
         .target(
             name: "CoreToolkit",
             dependencies: []),
+
+        // MARK: - Models Target
+
+        .target(
+            name: "Models",
+            dependencies: []
+        ),
 
         // MARK: - UIToolkit Target
 
