@@ -4,14 +4,6 @@ import News
 import Program
 import SwiftUI
 
-// MARK: - Selected view
-
-public enum Tabs: String {
-    case program
-    case news
-    case map
-}
-
 // MARK: - TabBar View
 
 public struct TabBarView: View {
@@ -37,7 +29,10 @@ public struct TabBarView: View {
                 )
                 .tag(Tabs.program)
                 .tabItem {
-                    Label("Program", systemImage: "calendar") // TODO: add image
+                    Label(
+                        Tabs.program.name(),
+                        systemImage: Tabs.program.iconName()
+                    )
                 }
 
                 NewsView(
@@ -48,7 +43,10 @@ public struct TabBarView: View {
                 )
                 .tag(Tabs.news)
                 .tabItem {
-                    Label("Novinky", systemImage: "newspaper") // TODO: add image
+                    Label(
+                        Tabs.news.name(),
+                        systemImage: Tabs.news.iconName()
+                    )
                 }
 
                 MapView(
@@ -59,10 +57,13 @@ public struct TabBarView: View {
                 )
                 .tag(Tabs.map)
                 .tabItem {
-                    Label("Mapa", systemImage: "map") // TODO: add image
+                    Label(
+                        Tabs.map.name(),
+                        systemImage: Tabs.map.iconName()
+                    )
                 }
             }
-            .navigationTitle(viewStore.selectedTab.rawValue)
+            .navigationTitle(viewStore.selectedTab.name())
         }
     }
 }
