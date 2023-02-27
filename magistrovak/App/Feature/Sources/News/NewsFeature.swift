@@ -21,7 +21,7 @@ public struct NewsFeature: ReducerProtocol {
 
     public enum Action: Equatable {
         case fetchProgram
-        case productLoaded(TaskResult<[News]>)
+        case newsLoaded(TaskResult<[News]>)
     }
 
     // MARK: Dependency
@@ -34,15 +34,24 @@ public struct NewsFeature: ReducerProtocol {
         Reduce { state, action in
             switch action {
             case .fetchProgram:
-                let result = apiClient.getNewsList()
-                // TODO: check result
-                return EffectTask(value: .productLoaded(.success(result)))
+                return .task {
+                    do {
+                        let result = try await apiClient.getNewsList()
+                        return .newsLoaded(.success(result))
+                    } catch {
+                        return .newsLoaded(.failure(error))
+                    }
+                }
+//            case .fetchProgram:
+//                let result = apiClient.getNewsList()
+//                // TODO: check result
+//                return EffectTask(value: .productLoaded(.success(result)))
 
-            case let .productLoaded(.success(program)):
+            case let .newsLoaded(.success(program)):
                 state.allNews = program
                 return .none
 
-            case .productLoaded(.failure):
+            case .newsLoaded(.failure):
                 // TODO: implement
                 return .none
             }

@@ -34,9 +34,19 @@ public struct ProgramFeature: ReducerProtocol {
         Reduce { state, action in
             switch action {
             case .fetchProgram:
-                let result = apiClient.getProgramList()
-                // TODO: check result
-                return EffectTask(value: .productLoaded(.success(result)))
+                return .task {
+                    do {
+                        let result = try await apiClient.getProgramList()
+                        return .productLoaded(.success(result))
+                    } catch {
+                        return .productLoaded(.failure(error))
+                    }
+                }
+
+//            case .fetchProgram:
+//                let result = apiClient.getProgramList()
+//                // TODO: check result
+//                return EffectTask(value: .productLoaded(.success(result)))
 
             case let .productLoaded(.success(program)):
                 state.program = program

@@ -21,7 +21,7 @@ public struct ProgramView: View {
                 }
             }
             .task {
-                viewStore.send(.fetchProgram)
+                await viewStore.send(.fetchProgram).finish()
             }
         }
     }
