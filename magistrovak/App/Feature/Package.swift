@@ -70,7 +70,8 @@ let package = Package(
             dependencies: [
                 .product(name: "APIClient", package: "Infrastructure"),
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
-                .product(name: "Models", package: "Infrastructure")
+                .product(name: "Models", package: "Infrastructure"),
+                .product(name: "UIToolkit", package: "Infrastructure")
             ]
         ),
         .testTarget(

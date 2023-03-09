@@ -20,6 +20,20 @@ struct Harmonogram: Codable {
     }
 }
 
+// MARK: - List of Dates
+
+extension ProgramDTO {
+    var datesStrings: [String] {
+        var dates: [String] = []
+
+        for day in self.dates {
+            dates.append(day.first?.value ?? "noDate")
+        }
+
+        return dates
+    }
+}
+
 // MARK: - To Model Conversion
 
 extension ProgramDTO: DTOModelProtocol {

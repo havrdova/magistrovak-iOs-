@@ -17,4 +17,8 @@ public extension Event {
             date: "1. 9. 2023"
         )
     ]
+
+    static let mockDates: [String] = [
+        "1. 9. 2023"
+    ]
 }

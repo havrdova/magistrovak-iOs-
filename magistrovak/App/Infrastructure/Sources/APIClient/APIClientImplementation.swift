@@ -14,8 +14,9 @@ extension APIClient: DependencyKey {
                 let dto: ProgramDTO = try await networkManager.getDataFromRequest(request())
 
                 let result: [Event] = dto.toModel
+                let dates: [String] = dto.datesStrings
 
-                return result
+                return (result, dates)
             },
             getNewsList: {
                 let networkManager = NetworkManager()
@@ -34,7 +35,7 @@ extension APIClient: DependencyKey {
     public static var mockValue: APIClient {
         return APIClient(
             getProgramList: {
-                return Event.mockData
+                return (Event.mockData, Event.mockDates)
             },
             getNewsList: {
                 return News.mockData

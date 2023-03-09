@@ -5,7 +5,8 @@ import Models
 // MARK: - API Client
 
 public struct APIClient {
-    public var getProgramList: () async throws -> [Event]
+    /// returns list of events and list od dates
+    public var getProgramList: () async throws -> ([Event], [String])
     public var getNewsList: () async throws -> [News]
 }
 
