@@ -30,7 +30,7 @@ public struct ProgramView: View {
                     )
 
                     List {
-                        ForEach(viewStore.program) { event in
+                        ForEach(viewStore.dayProgram) { event in
                             eventCell(event)
                         }
                     }

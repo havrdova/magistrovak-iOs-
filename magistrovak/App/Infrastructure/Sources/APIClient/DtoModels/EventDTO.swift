@@ -43,7 +43,7 @@ extension ProgramDTO: DTOModelProtocol {
 
         for day in self.harmonogram {
             for event in day {
-                let date = self.dates[idx][String(idx)] ?? "no date"
+                let date = self.dates[idx].first?.value ?? "no date"
 
                 result.append(
                     Event(

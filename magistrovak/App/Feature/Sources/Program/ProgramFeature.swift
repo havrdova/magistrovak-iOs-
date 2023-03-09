@@ -14,9 +14,14 @@ public struct ProgramFeature: ReducerProtocol {
 
     public struct State: Equatable {
         var selectedTab: Int = 0
-
-        var program: [Event] = []
+        var allProgram: [Event] = []
         var dates: [String] = []
+
+        var dayProgram: [Event] {
+            allProgram.filter { event in
+                event.date == dates[selectedTab]
+            }
+        }
 
         public init() {}
     }
@@ -52,7 +57,7 @@ public struct ProgramFeature: ReducerProtocol {
                 }
 
             case let .productLoaded(.success((program, dates))):
-                state.program = program
+                state.allProgram = program
                 state.dates = dates
                 return .none
 
