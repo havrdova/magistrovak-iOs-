@@ -42,9 +42,9 @@ public struct ReversedTabsView: View {
                                             .padding(EdgeInsets(top: 10, leading: 3, bottom: 10, trailing: 15))
                                     }
                                     .frame(width: fixed ? (geoWidth / CGFloat(tabs.count)) : .none, height: 52)
-                                    // Bar Indicator
-                                    Rectangle().fill(selectedTab == row ? Color.white : Color.clear)
-                                        .frame(height: 3)
+//                                    // Bar Indicator
+                                    Rectangle().fill(selectedTab == row ? Color.gray : Color.clear)
+                                        .frame(height: 2)
                                 }.fixedSize()
                             })
                                 .accentColor(Color.white)
@@ -61,7 +61,7 @@ public struct ReversedTabsView: View {
         }
         .frame(height: 55)
         .onAppear(perform: {
-            UIScrollView.appearance().backgroundColor = UIColor(#colorLiteral(red: 0.6196078431, green: 0.1098039216, blue: 0.2509803922, alpha: 1))
+//            UIScrollView.appearance().backgroundColor = UIColor(#colorLiteral(red: 0.6196078431, green: 0.1098039216, blue: 0.2509803922, alpha: 1))
             UIScrollView.appearance().bounces = fixed ? false : true
         })
         .onDisappear(perform: {

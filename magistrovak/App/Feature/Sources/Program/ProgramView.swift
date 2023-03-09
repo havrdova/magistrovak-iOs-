@@ -17,7 +17,7 @@ public struct ProgramView: View {
     public var body: some View {
         WithViewStore(store) { viewStore in
             GeometryReader { geo in
-                VStack {
+                VStack(spacing: 0) {
                     ReversedTabsView(
                         tabs: viewStore.dates,
                         geoWidth: geo.size.width,
