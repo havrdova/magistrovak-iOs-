@@ -1,6 +1,7 @@
 import ComposableArchitecture
 import Models
 import SwiftUI
+import UIToolkit
 
 // MARK: - Program View
 
@@ -15,13 +16,28 @@ public struct ProgramView: View {
 
     public var body: some View {
         WithViewStore(store) { viewStore in
-            List {
-                ForEach(viewStore.program) { event in
-                    eventCell(event)
+            GeometryReader { geo in
+                VStack {
+                    ReversedTabsView(
+                        tabs: viewStore.dates,
+                        geoWidth: geo.size.width,
+                        selectedTab: .init(
+                            get: { viewStore.selectedTab },
+                            set: { tabIdx in
+                                viewStore.send(.setSelectedTab(idx: tabIdx))
+                            }
+                        )
+                    )
+
+                    List {
+                        ForEach(viewStore.program) { event in
+                            eventCell(event)
+                        }
+                    }
+                    .task {
+                        await viewStore.send(.fetchProgram).finish()
+                    }
                 }
-            }
-            .task {
-                await viewStore.send(.fetchProgram).finish()
             }
         }
     }

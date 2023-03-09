@@ -11,6 +11,7 @@ public struct TabBarView: View {
 
     public init(store: StoreOf<TabBarFeature>) {
         self.store = store
+        UITabBar.appearance().isTranslucent = false
     }
 
     public var body: some View {

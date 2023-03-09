@@ -26,7 +26,7 @@ public struct NewsView: View {
         }
     }
 
-    // MARK: Vell View
+    // MARK: Cell View
 
     func newsCell(_ news: News) -> some View {
         VStack(alignment: .leading) {

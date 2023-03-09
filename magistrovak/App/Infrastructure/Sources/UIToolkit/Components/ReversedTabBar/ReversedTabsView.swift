@@ -1,22 +1,28 @@
 import Foundation
 import SwiftUI
 
-// MARK: - Tab
-
-struct Tab {
-    var icon: Image?
-    var title: String
-}
-
 // MARK: - Tabs View
+/// source: https://johncodeos.com/how-to-create-tabs-with-swiftui/
 
-struct ReversedTabsView: View {
+public struct ReversedTabsView: View {
     var fixed = true
-    var tabs: [Tab]
+    var tabs: [String]
     var geoWidth: CGFloat
     @Binding var selectedTab: Int
 
-    var body: some View {
+    public init(
+        fixed: Bool = true,
+        tabs: [String],
+        geoWidth: CGFloat,
+        selectedTab: Binding<Int>
+    ) {
+        self.fixed = fixed
+        self.tabs = tabs
+        self.geoWidth = geoWidth
+        self._selectedTab = selectedTab
+    }
+
+    public var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             ScrollViewReader { proxy in
                 VStack(spacing: 0) {
@@ -29,14 +35,10 @@ struct ReversedTabsView: View {
                             }, label: {
                                 VStack(spacing: 0) {
                                     HStack {
-                                        // Image
-                                        AnyView(tabs[row].icon)
-                                            .foregroundColor(.white)
-                                            .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0))
                                         // Text
-                                        Text(tabs[row].title)
+                                        Text(tabs[row])
                                             .font(Font.system(size: 18, weight: .semibold))
-                                            .foregroundColor(Color.white)
+                                            .foregroundColor(Color.black)
                                             .padding(EdgeInsets(top: 10, leading: 3, bottom: 10, trailing: 15))
                                     }
                                     .frame(width: fixed ? (geoWidth / CGFloat(tabs.count)) : .none, height: 52)
@@ -67,13 +69,14 @@ struct ReversedTabsView: View {
         })
     }
 }
-struct Tabs_Previews: PreviewProvider {
+
+// MARK: - Reversed Tabs Preview
+
+struct ReversedTabs_Previews: PreviewProvider {
     static var previews: some View {
         ReversedTabsView(
             fixed: true,
-            tabs: [.init(icon: Image(systemName: "star.fill"), title: "Tab 1"),
-                   .init(icon: Image(systemName: "star.fill"), title: "Tab 2"),
-                   .init(icon: Image(systemName: "star.fill"), title: "Tab 3")],
+            tabs: ["Tab 1", "Tab 2", "Tab 3"],
             geoWidth: 375,
             selectedTab: .constant(0)
         )

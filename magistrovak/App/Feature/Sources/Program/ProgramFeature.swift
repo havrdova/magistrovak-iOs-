@@ -13,6 +13,8 @@ public struct ProgramFeature: ReducerProtocol {
     // MARK: State
 
     public struct State: Equatable {
+        var selectedTab: Int = 0
+
         var program: [Event] = []
         var dates: [String] = []
 
@@ -24,6 +26,7 @@ public struct ProgramFeature: ReducerProtocol {
     public enum Action: Equatable {
         case fetchProgram
         case productLoaded(TaskResult<([Event], [String])>)
+        case setSelectedTab(idx: Int)
 
         public static func == (lhs: ProgramFeature.Action, rhs: ProgramFeature.Action) -> Bool {
             false // TODO: think about it again
@@ -51,6 +54,10 @@ public struct ProgramFeature: ReducerProtocol {
             case let .productLoaded(.success((program, dates))):
                 state.program = program
                 state.dates = dates
+                return .none
+
+            case let .setSelectedTab(idx):
+                state.selectedTab = idx
                 return .none
 
             case .productLoaded(.failure):
