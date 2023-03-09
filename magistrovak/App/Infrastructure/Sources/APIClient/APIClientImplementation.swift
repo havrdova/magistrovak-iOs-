@@ -11,18 +11,18 @@ extension APIClient: DependencyKey {
             getProgramList: {
                 let networkManager = NetworkManager()
                 let request = ApiEndpoints.programList.request
-                let dto: ProgramDTO = try await networkManager.getDataFromRequest(request)
+                let dto: ProgramDTO = try await networkManager.getDataFromRequest(request())
 
-                var result: [Event] = dto.toModel
+                let result: [Event] = dto.toModel
 
                 return result
             },
             getNewsList: {
                 let networkManager = NetworkManager()
                 let request = ApiEndpoints.newsList.request
-                let dto: AllNewsDTO = try await networkManager.getDataFromRequest(request)
+                let dto: AllNewsDTO = try await networkManager.getDataFromRequest(request())
 
-                var result: [News] = dto.toModel
+                let result: [News] = dto.toModel
 
                 return result
             }

@@ -35,17 +35,12 @@ public struct NewsFeature: ReducerProtocol {
             switch action {
             case .fetchProgram:
                 return .task {
-                    do {
-                        let result = try await apiClient.getNewsList()
-                        return .newsLoaded(.success(result))
-                    } catch {
-                        return .newsLoaded(.failure(error))
-                    }
+                    await .newsLoaded(
+                        TaskResult {
+                            try await apiClient.getNewsList()
+                        }
+                    )
                 }
-//            case .fetchProgram:
-//                let result = apiClient.getNewsList()
-//                // TODO: check result
-//                return EffectTask(value: .productLoaded(.success(result)))
 
             case let .newsLoaded(.success(program)):
                 state.allNews = program

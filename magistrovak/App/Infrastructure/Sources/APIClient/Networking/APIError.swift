@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - API Error
 
-enum APIError: Error {
+public enum APIError: Error {
     case downloadError
     case decodingError
     case invalidStatusCode

@@ -25,7 +25,7 @@ struct Harmonogram: Codable {
 extension ProgramDTO: DTOModelProtocol {
     var toModel: [Event] {
         var result: [Event] = []
-        var idx = 1
+        var idx = 0
 
         for day in self.harmonogram {
             for event in day {

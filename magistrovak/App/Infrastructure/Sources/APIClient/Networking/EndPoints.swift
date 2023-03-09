@@ -10,6 +10,24 @@ enum ApiEndpoints {
 
 extension ApiEndpoints {
 
+    // MARK: Scheme
+
+    var scheme: String {
+        switch self {
+        default:
+            return Constants.Networking.scheme
+        }
+    }
+
+    // MARK: Host
+
+    var host: String {
+        switch self {
+        default:
+            return Constants.Networking.host
+        }
+    }
+
     // MARK: Endpoint URL Paht
 
     var path: String {
@@ -42,13 +60,15 @@ extension ApiEndpoints {
     }
 
     // MARK: URL Request creation
-    // TODO: remove exclamation marks
-    
-    var request: URLRequest {
-        var urlComponents = URLComponents(string: Constants.Networking.baseUrl)!
-        urlComponents.path = path
 
-        var request = URLRequest(url: urlComponents.url!)
+    func request() throws -> URLRequest {
+        // TODO: create the url different way
+        
+        guard let url = URL(string: self.scheme + "://" + self.host + "/" + self.path) else {
+            throw APIError.invalidURL
+        }
+
+        var request = URLRequest(url: url)
         request.httpMethod = method
 
         return request
