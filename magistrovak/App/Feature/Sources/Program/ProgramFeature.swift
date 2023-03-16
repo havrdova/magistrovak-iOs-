@@ -1,4 +1,4 @@
-import APIClient
+import DataProviderClient
 import ComposableArchitecture
 import Foundation
 import Models
@@ -40,7 +40,7 @@ public struct ProgramFeature: ReducerProtocol {
 
     // MARK: Dependency
 
-    @Dependency(\.apiClient) private var apiClient
+    @Dependency(\.dataProviderClient) private var dataProviderClient
 
     // MARK: Reducer
 
@@ -51,7 +51,7 @@ public struct ProgramFeature: ReducerProtocol {
                 return .task {
                     await .productLoaded(
                         TaskResult {
-                            try await apiClient.getProgramList()
+                            try await dataProviderClient.getProgramList()
                         }
                     )
                 }

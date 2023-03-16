@@ -17,6 +17,14 @@ let package = Package(
             targets: ["CoreToolkit"]
         ),
         .library(
+            name: "DataProviderClient",
+            targets: ["DataProviderClient"]
+        ),
+        .library(
+            name: "MemoryClient",
+            targets: ["MemoryClient"]
+        ),
+        .library(
             name: "Models",
             targets: ["Models"]
         ),
@@ -54,6 +62,31 @@ let package = Package(
         .target(
             name: "CoreToolkit",
             dependencies: []
+        ),
+
+        // MARK: - Data Provider Client Target
+
+        .target(
+            name: "DataProviderClient",
+            dependencies: [
+                "APIClient",
+                "MemoryClient",
+                "Models",
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
+            ]
+        ),
+        .testTarget(
+            name: "DataProviderClientTests"
+        ),
+
+        // MARK: - Memory Client
+
+        .target(
+            name: "MemoryClient",
+            dependencies: [
+                "Models",
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
+            ]
         ),
 
         // MARK: - Models Target

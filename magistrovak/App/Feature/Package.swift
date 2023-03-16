@@ -53,7 +53,7 @@ let package = Package(
         .target(
             name: "News",
             dependencies: [
-                .product(name: "APIClient", package: "Infrastructure"),
+                .product(name: "DataProviderClient", package: "Infrastructure"),
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 .product(name: "Models", package: "Infrastructure")
             ]
@@ -68,7 +68,7 @@ let package = Package(
         .target(
             name: "Program",
             dependencies: [
-                .product(name: "APIClient", package: "Infrastructure"),
+                .product(name: "DataProviderClient", package: "Infrastructure"),
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 .product(name: "Models", package: "Infrastructure"),
                 .product(name: "UIToolkit", package: "Infrastructure")
