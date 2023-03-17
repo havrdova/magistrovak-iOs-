@@ -7,14 +7,22 @@ extension MemoryClient: DependencyKey {
     // MARK: - Live Value
 
     public static var liveValue: MemoryClient {
+        let userDefaults = UserDefaults()
+        let programListKey = "programListKey"
+        var userDefaultsClient = UserDefaultsClient()
+
         return MemoryClient(
             getProgramList: {
-                // TODO: implement
-                mockValue.getProgramList()
+                userDefaultsClient.getProgramList()
             },
             getNewsList: {
-                // TODO: implement
-                mockValue.getNewsList()
+                userDefaultsClient.getNewsList()
+            },
+            saveProgramList: { events, dates in
+                userDefaultsClient.setProgramList(events: events, dates: dates)
+            },
+            saveNewsList: { news in
+                userDefaultsClient.setNewsList(news: news)
             }
         )
     }
@@ -28,6 +36,12 @@ extension MemoryClient: DependencyKey {
             },
             getNewsList: {
                 return News.mockData
+            },
+            saveProgramList: { events, dates in
+                // TODO: implement
+            },
+            saveNewsList: { news in
+                // TODO: implement
             }
         )
     }

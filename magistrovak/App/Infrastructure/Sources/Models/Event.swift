@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - Event
 
-public struct Event: Equatable, Identifiable {
+public struct Event: Equatable, Identifiable, Codable {
     public let id: String
     public let name: String
     public let startTime: String

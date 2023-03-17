@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - News Model
 
-public struct News: Equatable, Identifiable {
+public struct News: Equatable, Identifiable, Codable {
     public let id: String
     public let name: String
     public let time: String

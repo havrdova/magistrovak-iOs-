@@ -18,8 +18,9 @@ extension DataProviderClient: DependencyKey {
                 var result: ([Event], [String])
                 do {
                     result = try await apiClient.getProgramList()
+                    memoryClient.saveProgramList(result.0, result.1)
                 } catch {
-                    result = memoryClient.getProgramList()
+                    result = memoryClient.getProgramList() ?? ([], [])
                 }
 
                 return result
@@ -29,8 +30,9 @@ extension DataProviderClient: DependencyKey {
 
                 do {
                     result = try await apiClient.getNewsList()
+                    memoryClient.saveNewsList(result)
                 } catch {
-                    result = memoryClient.getNewsList()
+                    result = memoryClient.getNewsList() ?? []
                 }
 
                 return result
